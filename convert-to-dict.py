@@ -12,7 +12,6 @@ pp = pprint.PrettyPrinter()
 def convert(file):
     with open(file, 'r') as output_file:
         json_file = json.load(output_file)
-       # pp = pprint.PrettyPrinter()
         pp.pprint(json_file)
 
 
