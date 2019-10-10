@@ -6,9 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-ipython = "*"
-unzip = "*"
 click = "*"
+ipython = "*"
+pprint = "*"
 
 [requires]
 python_version = "3.7"

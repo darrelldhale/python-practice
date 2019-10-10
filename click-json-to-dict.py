@@ -6,9 +6,12 @@ import pprint
 
 pp = pprint.PrettyPrinter()
 
-@click.command
+@click.command()
 @click.argument('file')
 def convert (file):
     with open(file, 'r') as output_file:
         json_file = json.load(output_file)
         pp.pprint(json_file)
+
+if __name__ == '__main__':
+    convert()
