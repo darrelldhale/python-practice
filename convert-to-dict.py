@@ -19,6 +19,7 @@ def convert(file):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Json-to-Dict')
 
+    parser.add_argument('convert', choices=['convert'])
     parser.add_argument('file', help='a json file to convert')
 
     args = parser.parse_args()
